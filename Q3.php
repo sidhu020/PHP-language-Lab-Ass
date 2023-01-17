@@ -36,3 +36,8 @@ echo "Factorial of $num is $factorial";
 
 </body>
 </html>
+
+
+<!-- OUTPUT
+
+Factorial of 5 is 120 -->

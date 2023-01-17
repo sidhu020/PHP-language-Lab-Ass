@@ -16,7 +16,7 @@ Hit:0, 1, 153, 371, 407, 471, etc are Armstrong numbers.
 <body>
 
 <?php
-$armnum2=507;
+$armnum2=253;
 $total3=0;
 for($x3=$armnum2;$x3!=0;$x3=$x3/10)
 {
@@ -35,3 +35,16 @@ echo "No, Number $armnum2 it is not an armstrong number";
 
 </body>
 </html>
+
+
+<!-- OUTPUT
+
+
+Yes, Number 407 is an Armstrong number
+
+Yes, Number 153 is an Armstrong number
+
+No, Number 253 it is not an armstrong number
+
+
+-->
