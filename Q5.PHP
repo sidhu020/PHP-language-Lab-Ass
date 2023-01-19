@@ -1,3 +1,7 @@
+
+<!-- A palindrome number is a number which remains same when its
+digits are reversed. -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +11,23 @@
     <title>Document</title>
 </head>
 <body>
+    <?php
 
+function isPalindrome($num) {
+    $original = (string) $num;
+    $reverse = strrev($original);
+    return $original == $reverse;
+}
+
+
+$num = 157;
+if (isPalindrome($num)) {
+    echo $num . " is a palindrome";
+} else {
+    echo $num . " is not a palindrome";
+}
+
+?>
 
 
 </body>
