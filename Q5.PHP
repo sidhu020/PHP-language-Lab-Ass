@@ -1,5 +1,5 @@
 
-<!-- A palindrome number is a number which remains same when its
+<!-- 5. A palindrome number is a number which remains same when its
 digits are reversed. -->
 
 <!DOCTYPE html>

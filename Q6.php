@@ -1,4 +1,5 @@
-<!-- 6. Hit For example, number 24142 is a palindrome number. On reversing it we?ll get the same number
+<!-- 7. Write program is Fibonacci series is the one in which you will get
+your next term by adding previous two numbers.
  -->
 
 
@@ -14,9 +15,21 @@
 <body>
 
 <?php
+function fibonacci($n) {
+    $first = 0;
+    $second = 1;
+    echo "Fibonacci series: ";
+    echo $first.' '.$second.' ';
+    for ($i = 2; $i < $n; $i++) {
+        $third = $first + $second;
+        echo $third.' ';
+        $first = $second;
+        $second = $third;
+    }
+}
 
-
-
+$n = 10;
+fibonacci($n);
 ?>
 
 </body>
