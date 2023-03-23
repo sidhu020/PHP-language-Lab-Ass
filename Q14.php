@@ -19,8 +19,8 @@ echo fwrite($file,"Hello World. Testing!");fclose($file);
 ?>
 
 <?php
-$fp = fopen('data.txt', 'w');//opens file in write-only modefwrite($fp,
-'welcome ');
+$fp = fopen('data.txt', 'w');//opens file in write-only
+modefwrite ($fp,'welcome ');
 fwrite($fp, 'to php file write');
 fclose($fp);
 echo "File written successfully";

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+  <!-- 24. Write program start type name in input field the get Suggestions (hit)
+  name with ajax.-->
+  <head>
+    <title>Name Suggestions</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // listen for input changes in name input field
+        $("#name").on("input", function () {
+          // get value of name input field
+          var name = $(this).val();
+          // send Ajax request to get name suggestions
+          $.ajax({
+            url: "Q05(01).php",
+            method: "POST",
+            data: { name: name },
+            success: function (data) {
+              // display name suggestions in suggestions div
+              $("#suggestions").html(data);
+            },
+          });
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <h1>Name Suggestions</h1>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" />
+    <div id="suggestions"></div>
+  </body>
+</html>
